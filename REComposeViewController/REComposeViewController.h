@@ -61,6 +61,7 @@ typedef void (^REComposeViewControllerCompletionHandler)(REComposeResult result)
 @property (copy, nonatomic) REComposeViewControllerCompletionHandler completionHandler;
 @property (weak, nonatomic) id <REComposeViewControllerDelegate> delegate;
 @property (assign, readwrite, nonatomic) NSInteger cornerRadius;
+@property (strong, nonatomic) REComposeSheetView *sheetView;
 
 @end
 
