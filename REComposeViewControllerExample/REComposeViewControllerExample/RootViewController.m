@@ -49,9 +49,10 @@
 {
     REComposeViewController *composeViewController = [[REComposeViewController alloc] init];
     composeViewController.title = @"Social Network";
-    composeViewController.hasAttachment = YES;
+    composeViewController.hasAttachment = NO;
     composeViewController.delegate = self;
     composeViewController.text = @"Test";
+    [composeViewController.sheetView.textView showRuledBackground];
     [self presentViewController:composeViewController animated:YES completion:nil];
 }
 
