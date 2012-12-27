@@ -24,8 +24,10 @@
 @property (nonatomic, copy) NSString *accountName;
 @property (nonatomic, readonly) CGRect fromButtonFrame;  // So the popover can be displayed from this rect.
 
-@end
+- (void)showRuledBackground;
+- (void)addBackgroundView:(UIView *)backgroundView;
 
+@end
 
 @protocol DEComposeTextViewDelegate <NSObject>
 
